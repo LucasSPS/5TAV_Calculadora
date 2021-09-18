@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class principal {
 	public static void main(String[] args) {
 		try (Scanner a = new Scanner(System.in)) {
-			System.out.println("------CALCULADORA------");
 			System.out.println("O que deseja realizar?");
 			System.out.println("1- Somar");
 			System.out.println("2- Subtrair");
