@@ -42,7 +42,7 @@ public class testesCalculadora {
 
 		assertEquals(esperado, resultado);
 	}
-	
+
 	@Test
 	public void testarDivisaopor0() {
 		Calculadora calc = new Calculadora();
@@ -50,26 +50,40 @@ public class testesCalculadora {
 		double resultado = calc.dividir(10, 0);
 
 		assertEquals(esperado, resultado);
-	
+
 	}
-	
+
 	@Test
 	public void testarDivisaode0por10() {
 		Calculadora calc = new Calculadora();
 		double esperado = 0;
 		double resultado = calc.dividir(0, 10);
 
-		assertEquals(esperado, resultado);
-	
-	}
-	
 	@Test
-	public void testarDivisaode0por0() {
+	public void testarExponenciacao() {
 		Calculadora calc = new Calculadora();
-		double esperado = 0;
-		double resultado = calc.dividir(0, 0);
+		double esperado = 25;
+		double resultado = calc.exponenciacao(5);
 
 		assertEquals(esperado, resultado);
-	
 	}
+
+	@Test
+	public void testarRaizQuadrada() {
+		Calculadora calc = new Calculadora();
+		double esperado = 4;
+		double resultado = calc.raizQuadrada(25);
+
+		assertEquals(esperado, resultado);
+	}
+
+	@Test
+	public void testarporcentagem() {
+		Calculadora calc = new Calculadora();
+		double esperado = 4;
+		double resultado = calc.porcentagem(500);
+
+		assertEquals(esperado, resultado);
+	}
+
 }
