@@ -58,11 +58,12 @@ public class testesCalculadora {
 		Calculadora calc = new Calculadora();
 		double esperado = 0;
 		double resultado = calc.dividir(0, 10);
+	}
 
 	@Test
 	public void testarExponenciacao() {
 		Calculadora calc = new Calculadora();
-		double esperado = 25;
+		double esperado = 24;
 		double resultado = calc.exponenciacao(5);
 
 		assertEquals(esperado, resultado);
@@ -81,7 +82,7 @@ public class testesCalculadora {
 	public void testarporcentagem() {
 		Calculadora calc = new Calculadora();
 		double esperado = 4;
-		double resultado = calc.porcentagem(500);
+		double resultado = calc.porcentagem(0.45);
 
 		assertEquals(esperado, resultado);
 	}

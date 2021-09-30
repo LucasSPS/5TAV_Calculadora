@@ -20,69 +20,42 @@ public class principal {
 			System.out.print("Digite o segundo numero: ");
 			int n2 = a.nextInt();
 
-			public float porcentagem(float a) {
-				return a%100;
-			}
-			public float raizQuadrada(float a) {
-				return Math.sqrt(a);;
-			}
-			public float exponenciacao(float a) {
-				return a*a;
-			}
-
 			Calculadora calc = new Calculadora();
 
-					case 2:
-						System.out.println("Resultado: " + calc.subtrair(n1, n2));
-						break;
+			switch (opcao) {
+				case 1:
+					System.out.println("Resultado: " + calc.subtrair(n1, n2));
+					break;
 
-					case 3:
-						System.out.println("Resultado: " + calc.multiplicar(n1, n2));
-						break;
+				case 2:
+					System.out.println("Resultado: " + calc.subtrair(n1, n2));
+					break;
+					
+				case 3:
+					System.out.println("Resultado: " + calc.multiplicar(n1, n2));
+					break;
 
-					case 4:
-						System.out.println("Resultado: " + calc.dividir(n1, n2));
-						break;
-					}
+				case 4:
+					System.out.println("Resultado: " + calc.dividir(n1, n2));
+					break;
 
-					case 5:
-						System.out.println("Resultado: " + calc.porcentagem(n1));
-						break;
-					}
+				case 5:
+					System.out.println("Resultado: " + calc.porcentagem(n1));
+					break;
 
-					case 6:
-						System.out.println("Resultado: " + calc.exponenciacao(n1));
-						break;
-					}
+				case 6:
+					System.out.println("Resultado: " + calc.raizQuadrada(n1));
+					break;
 
-					case 7:
-						System.out.println("Resultado: " + calc.raizQuadrada(n1));
-						break;
-					}
-					System.out.println("Pressione enter para continuar...");
-					new java.util.Scanner(System.in).nextLine();
-				} else {
-					System.out.println("_____FIM_____");
-				}
+				case 7:
+					System.out.println("Resultado: " + calc.exponenciacao(n1));
+					break;
 
-			case 4:
-				System.out.println("Resultado: " + calc.dividir(n1, n2));
-			  break;
-
-			case 5:
-				System.out.println("Resultado: " + calc.porcentagem(n1));
-				break;
-
-			case 6:
-				System.out.println("Resultado: " + calc.raizQuadrada(n1));
-				break;
-
-			case 7:
-				System.out.println("Resultado: " + calc.exponenciacao(n1));
-				break;
-			default:
-				System.out.println("Op��o inv�lida");
+				default:
+					System.out.println("Opcao invalida");
+					break;
 			}
+
 		}
 	}
 }

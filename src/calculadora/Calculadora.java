@@ -25,7 +25,7 @@ public class Calculadora {
 	}
 
 	public double raizQuadrada(double a) {
-		return Math.sqrt(a);;
+		return Math.sqrt(a);
 	}
 
 	public double exponenciacao(double a) {
